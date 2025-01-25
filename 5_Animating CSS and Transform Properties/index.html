@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animating CSS and Transform Properties</title>
+    <style>
+        body{
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100dvh;
+        }
+        .animated-button {
+          padding: 15px 30px;
+          font-size: 18px;
+          background-color: #3498db;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transform: scale(1);
+          transition: all 0.3s ease;
+        }
+      </style>
+</head>
+<body>
+    <button class="animated-button">Hover Me</button>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
