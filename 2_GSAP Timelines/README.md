@@ -1,4 +1,4 @@
-### **Chapter 2: GSAP Timelines**
+## **Chapter 2: GSAP Timelines**
 
 Timelines are one of GSAP's most powerful features, allowing you to sequence multiple animations in a controlled, reusable manner. They enable complex interactions without worrying about manually synchronizing animations.
 

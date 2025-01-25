@@ -1,4 +1,4 @@
-### **Chapter 3: Easing Functions**
+## **Chapter 3: Easing Functions**
 
 Easing functions control the speed and acceleration of animations, making them look natural and visually appealing. Instead of having an animation play linearly (constant speed), easing adds dynamics like acceleration, deceleration, or bounce effects.
 
