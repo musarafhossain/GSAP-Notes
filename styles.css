@@ -1,0 +1,97 @@
+/* styles.css */
+:root {
+    --bg-color-light: #ffffff;
+    --text-color-light: #000000;
+    --sidebar-bg-light: #f4f4f4;  
+    --sidebar-text-light: #000000; 
+    
+    --bg-color-dark: #121212;
+    --text-color-dark: #ffffff;
+    --sidebar-bg-dark: #2c2c2c;  
+    --sidebar-text-dark: #ffffff;  
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color-light);
+    color: var(--text-color-light);
+    transition: all 0.5s ease;
+}
+
+body.dark {
+    background-color: var(--bg-color-dark);
+    color: var(--text-color-dark);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    z-index: 10;
+}
+
+header i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#side-bar {
+    position: absolute;
+    width: 250px;
+    transform: translateX(-250px);
+    height: calc(100vh - 70px);
+    background-color: var(--sidebar-bg-light);
+    color: var(--sidebar-text-light);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease;
+    overflow: auto;
+}
+
+nav#side-bar.sidebar-open {
+    transform: translateX(0);
+}
+
+body.dark #side-bar {
+    background-color: var(--sidebar-bg-dark);  
+    color: var(--sidebar-text-dark); 
+}
+
+#side-bar a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: inherit;  
+    transition: all 0.3s ease;
+}
+
+#side-bar a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+main {
+    height: calc(100vh - 70px);
+    overflow: auto;
+    padding: 30px;
+    line-height: 1.8;
+}
+
+pre{
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 7px;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+}
