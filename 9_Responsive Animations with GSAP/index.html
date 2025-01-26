@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Animations with GSAP</title>
+</head>
+
+<body>
+    <div id="banner">
+        <h1 id="bannerText">Welcome to My Portfolio</h1>
+        <div id="circle"></div>
+    </div>
+
+    <style>
+        #banner {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #bannerText {
+            position: absolute;
+            font-size: 4rem;
+            white-space: nowrap;
+        }
+
+        #circle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            background: purple;
+            border-radius: 50%;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/MotionPathPlugin.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
